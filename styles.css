@@ -139,7 +139,7 @@ hr{
 }
 .drinks{
   display: flex;
-  justify-content:flex-start;
+  justify-content:center;
   gap: 20px;
   flex-shrink: 1;
 
@@ -148,7 +148,7 @@ hr{
 }
 .drink{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-shrink: 1;
   min-width: none;
