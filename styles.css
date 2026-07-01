@@ -84,9 +84,9 @@ b{
 }
 .mlogo{
   display: none;
-  width:100%;
+  width:auto;
   margin-left: auto;
-  height: 10vh;
+  height: 12vh;
   
   margin-right: 0px; 
 }
@@ -113,6 +113,7 @@ hr{
   margin-left: 40%;
   width: 20%;
   background-color: #18612A;
+  margin-bottom: 20px;
 }
 .menu-button{
   font-weight:bold ;
@@ -137,9 +138,49 @@ hr{
   
 }
 .drinks{
-  height: 20px;
-  width: 20px;
+  display: flex;
+  justify-content:flex-start;
+  gap: 20px;
+  flex-shrink: 1;
+
+
+  min-width: none;
 }
+.drink{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 1;
+  min-width: none;
+
+
+  
+
+}
+.drink img{
+  width: 100%;
+
+}
+@media (width<600px) {
+  .drinks{
+    
+    gap:5px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    
+
+  }
+  .drink{
+    width:100px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+
+  }
+}
+
+
 @media (width<600px) {
   .logo{
     display: none;
@@ -181,4 +222,8 @@ hr{
   .go{
     display: none;
   }
+  .site-header{
+    height: 5vh;
+  }
+
 }
