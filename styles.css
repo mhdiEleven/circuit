@@ -2,7 +2,7 @@ body {
   font-family: Verdana;
   padding: 0;
   margin:0;
-  
+  background-color: beige;
   
 }
 
@@ -47,7 +47,7 @@ footer{
   top:0;
   width: 100%;
   height: 12vh;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
   border-bottom: 4px rgba(100,100,100,25%) solid;
   background-color: white;
 
@@ -77,8 +77,10 @@ b{
 }
 .slogo{
   display: flex;
-  width: 100%;
+  width: 75%;
+  margin-left: 12.5%;
   justify-content: center;
+  background-color: white;
 }
 .mlogo{
   display: none;
@@ -90,7 +92,12 @@ b{
 }
 hr{
   border: none;
+  width: 75%;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-bottom:30px;
+  background-color: white;
+  color: white;
 }
 .block{
   display:flex;
@@ -139,17 +146,31 @@ hr{
   }
   .mlogo{
     display:block;
+    padding: 10px;
+  }
+  .slogo{
+    width: 100%;
+    margin: 0;
+  }
+  hr{
+    width: 100%;
+    margin: 0;
   }
   .block{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    margin: 0;
+    background-color: #18612A;
+    text-align: center;
   }
   .nice{
-    width:100%;
+    padding-top: 5%;
+    width:90%;
   }
   .right{
     order: 1;
+    margin-right: auto;
   }
   .descy{
     order: 2;
