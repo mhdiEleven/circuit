@@ -5,7 +5,9 @@ body {
   background-color: beige;
   
 }
-
+.color{
+  background-color: beige;
+}
 a:visited,a:link{
 
   color:#18612A;
@@ -80,14 +82,14 @@ b{
   width: 75%;
   margin-left: 12.5%;
   justify-content: center;
-  background-color: white;
+  background-color: beige;
 }
 .mlogo{
   display: none;
   width:auto;
   margin-left: auto;
   height: 12vh;
-  
+  background-color: beige;
   margin-right: 0px; 
 }
 hr{
@@ -126,7 +128,9 @@ hr{
 .right{
   margin-left: auto;
 }
-
+.color{
+  background-color: beige;
+}
 .devide{
   width: 100%;
   border-bottom: 5px gray solid;
@@ -138,13 +142,10 @@ hr{
   
 }
 .drinks{
-  display: flex;
-  justify-content:center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  flex-shrink: 1;
-
-
-  min-width: none;
+  border : 20px black solid
 }
 .drink{
   display: flex;
@@ -164,18 +165,11 @@ hr{
 @media (width<600px) {
   .drinks{
     
-    gap:5px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    align-items: flex-start;
 
     
 
   }
   .drink{
-    width:100px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
 
   }
 }
@@ -196,6 +190,7 @@ hr{
   hr{
     width: 100%;
     margin: 0;
+    background-color:beige
   }
   .block{
     display: flex;
@@ -225,5 +220,7 @@ hr{
   .site-header{
     height: 5vh;
   }
-
+  footer{
+    background-color: beige;
+  }
 }
