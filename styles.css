@@ -10,10 +10,10 @@ body {
 }
 a:visited,a:link{
 
-  color:#18612A;
+  color:#093514;
 }
-a:hover{
-  text-shadow: 0 0 20px  red;
+a:active{
+  animation: interact 1s ease;
 }
 p,h1,h2{
   flex:1;
@@ -43,7 +43,7 @@ footer{
 }
 .site-header {
   display: flex;
-  justify-content:flex-start;
+  justify-content:space-between;
   align-content: center;
   position: sticky;
   top:0;
@@ -53,7 +53,7 @@ footer{
   border-bottom: 4px rgba(100,100,100,25%) solid;
   background-color: white;
 
-
+  z-index: 1000;
 
 
 }
@@ -66,6 +66,7 @@ b{
   width: 1000vw;
   display: flex;
   justify-content:space-evenly;
+  align-items: center;
   flex-grow: 1;
 }
 .logo{
@@ -88,7 +89,7 @@ b{
   display: none;
   width:auto;
   margin-left: auto;
-  height: 12vh;
+  height: 20vh;
   background-color: beige;
   margin-right: 0px; 
 }
@@ -106,7 +107,7 @@ hr{
   align-items: center;
   margin-left: 12.5%;
   width: 75%;
-  background-color: #18612A;
+  background-color: #093514;
   
 }
 .sblock{
@@ -114,7 +115,7 @@ hr{
   align-items: center;
   margin-left: 40%;
   width: 20%;
-  background-color: #18612A;
+  background-color: #093514;
   margin-bottom: 20px;
 }
 .menu-button{
@@ -141,36 +142,97 @@ hr{
   width: 50px;
   
 }
-.drinks{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  border : 20px black solid
-}
-.drink{
+.type{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-shrink: 1;
-  min-width: none;
+  justify-content: flex-start;
+  color:black;
+  border-bottom: 1px  solid black;
+  width: 90%;
+  height: 4vw;
+  margin-bottom: 10vw;
+  justify-self: center;
+  font-size: 5vw;
+}
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
 
+}
+.area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   
-
+  margin-bottom: 10px;
+  
 }
-.drink img{
-  width: 100%;
+.area p{
 
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    font-size: 4cqw;
 }
-@media (width<600px) {
-  .drinks{
-    
+.area img{
+    margin-left: 20px;
+    width: 20%;
+}
+.area .growable{
+    flex-grow: 1;
+}
+.cent p{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.product-name {
+  color:rgb(255, 255, 255);
+  font-size: 6cqw;
+}
+.calorie{
+  font-size: 4cqw;
+  color:#818181
+}
+.price{
+  font-size: 10cqw;
+  color:rgb(255, 255, 255);
+}
+.title{
+  display: flex;
+  color: black;
+  font-size: 7cqw;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.space{
+  margin-left: 50px;
+}
 
-    
-
+@keyframes interact {
+  0%{
+    transform: scale(1);
   }
-  .drink{
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
 
+@media (width<600px) {
+  .grid-container{
+    grid-template-columns: 1fr ;
+  }
+  .area p{
+    font-size: 7cqw;
   }
 }
 
@@ -197,12 +259,19 @@ hr{
     flex-direction: column;
     width: 100%;
     margin: 0;
-    background-color: #18612A;
+    background-color: #093514;
     text-align: center;
   }
   .nice{
-    padding-top: 5%;
-    width:90%;
+    padding-top: 2.5%;
+    padding-bottom: 0;
+    width:95%;
+  }
+  .descy{
+    padding: 30px;
+  }
+  .desc{
+    padding: 30px;
   }
   .right{
     order: 1;
